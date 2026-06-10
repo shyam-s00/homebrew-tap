@@ -5,13 +5,13 @@
 class Gg < Formula
   desc "gg (Gopher Glide) — fast, stage-based HTTP load-testing tool with behavioral snapshot support"
   homepage "https://github.com/shyam-s00/gopher-glide"
-  version "0.9.1"
+  version "0.9.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shyam-s00/gopher-glide/releases/download/v0.9.1/gg-v0.9.1-darwin-arm64.tar.gz"
-      sha256 "bd8dacc7d976634ab516ab8777634711a3ef542deec7bc33fae66107cb9de547"
+      url "https://github.com/shyam-s00/gopher-glide/releases/download/v0.9.2/gg-v0.9.2-darwin-arm64.tar.gz"
+      sha256 "f7de4ee4f2ab529bb608bcce4e68856a94bad061d336258caebb239eb2ac736c"
 
       define_method(:install) do
         bin.install "gg"
@@ -21,8 +21,8 @@ class Gg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shyam-s00/gopher-glide/releases/download/v0.9.1/gg-v0.9.1-linux-amd64.tar.gz"
-      sha256 "cd567a8d5676cbd0869bffebed897629f803099c0c69ee576984321f9d115924"
+      url "https://github.com/shyam-s00/gopher-glide/releases/download/v0.9.2/gg-v0.9.2-linux-amd64.tar.gz"
+      sha256 "db089d2c6815e679e49dd030902808cc4fed8eaf304c1be77b8ba18fb63a9bda"
       define_method(:install) do
         bin.install "gg"
       end
